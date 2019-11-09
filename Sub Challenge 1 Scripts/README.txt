@@ -1,0 +1,1 @@
+README To obtain predictions for the sub-challenge 1Down load the sub challenge 1 dataset to your computerRun the “processSubChallenge1dataScript.m” script using MATLABThen run the “subChallenge1_XGBoostSignallingFinal.jl” script using JuliaFinally run the “mergeScript.m” script using MATLABThe final results will be in the file named “subC1_XGBoostPred.csv”. 
