@@ -278,7 +278,7 @@ rmseTable = addvars(rmseTable, 0 ,'NewVariableNames',{'time'} ) ;
 rmseTable = addvars(rmseTable, {'k'} ,'NewVariableNames',{'treatment'}) ;
 
 % now run the loop
-for ii = 16 % :length(treatment)
+for ii = 1:length(treatment)
     % make predictions for each treatment given in the training data
     
     % train the model for each time point
@@ -289,7 +289,6 @@ for ii = 16 % :length(treatment)
         % values. This is why my RMSE was low but my dream score very high
         % because the distribution of the median data is not the same as
         % that of the current time point
-%         timePointData = readtable(
         
         % here their is no EGF treatment at time point 0 and there are not
         % drug treatmetn measurements taken at time point 5.5 therefore, I
